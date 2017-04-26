@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+#clear{clear:both}
+#wraper{width:100%/*1300*/; }
+
+img{border:0 none;} 
+.section1{width:100%; background-image:url(../images/bannerx_01.jpg); background-size:cover;
+ background-repeat:no-repeat;  }
+#banner h1{padding-top:1em; font-size:6.25em; font-family:Vijaya; text-align:center; 
+color:#de9915; font-weight:bold; padding-bottom:0.3em; }
+#banner p{width:69.2307%; text-align:center; margin:0 auto; font-size:2.5em; font-family:"Myanmar Text"; text-align:center; color:#de9915; line-height:1.25em; padding-bottom:2.95em;}
+#banner aside{width:4.1538%; margin:0 auto; padding-bottom:4.9375em; }
+#banner aside img{width:100%;  padding-bottom:1.5em}
+
+
+
+.section2{width:100%;  color:#414143; }
+#about #about_logo{width:4.2307%; margin:0 auto; }
+#about #about_logo img{width:100%; }
+#about h1{text-align:center;  font-size:1.875em;padding-top:0.6666em; font-family:Arial;}
+#about h6{text-align:center; padding-top:0.5769em; font-size:1.625em; font-family:"新宋体";}
+#about #content{width:73.8461%; margin:0 auto; padding:2.5em 0; }
+#about #content aside{font-size:3.75em; color:#005e15; float:left;}
+#about #content #pbiaoqian{width:87.5%; float:left; }
+#about #content #pbiaoqian p{font-family:"新宋体"; text-align:center; font-size:1.5em;line-height:1.6666em; }
+.section2 #content #pbiaoqian p{ position: relative; bottom: -120%; }
+
+
+
+.section3{width:100%; }
+#profo h1{text-align:center;  font-size:1.875em; font-family:Arial; padding:0.8% 0;}
+#profo h6{text-align:center;  font-size:1.625em; font-family:"新宋体"; }
+#profo #zuopin{width:92.3076%; margin:0 auto; padding:1.5em 0;}
+#profo #zuopin a{width:32.5%; display:block; float:left;position:relative; 
+padding-left:0.8333%; margin:0.625em 0}
+#profo #zuopin a img{width:97.4358%;   display:block;  }
+#profo #zuopin a div{width:95%; margin-left:2.6315%; display:none; opacity:0.8; 
+background:#333; line-height:9.3em; text-align:center; z-index:1000;position:absolute; top:0 ;left:0; 
+font-size:1.625em ; font-family:"微软雅黑"; color:#fff}
+
+
+
+.section4{width:100%; }
+#skills h1{text-align:center;  font-size:1.875em;padding-top:0.5em ; font-family:Arial;}
+#skills h6{text-align:center; padding-top:0.4769em;
+ font-size:1.625em ; font-family:"新宋体"; padding-bottom:0.5769em ;}
+#skills #cont{width:92.3076% ; margin:0 auto; font-size:1em ; font-family:"新宋体"; padding-bottom:2.6636em ; padding-top:1em}
+#htcs,#xys,#js,#arp,#flash,#ps{width:31.6666%  ; background:#e9e9e9; float:left; margin:0.625em 0.8333% ; position:relative;}
+#htcs img,#xys img,#js img,#arp img,#flash img,#ps img{width:26.5789% ; float:left; margin:3.375em 3.9473% ;}
+#htcs p,#xys p,#js p,#arp p,#flash p,#ps p{width:50.9629% ; line-height:2em ; float:left; padding-top:2.35em ; margin-left:0.8em;  }
+#skills #cont section:hover {box-shadow:0px 0px 5px 5px #898484}
+.section4 .left { position: relative; left: -120%;}
+.section4 .right { position: relative; right: -120%;}         
+
+
+.section5{width:100%; background-image:url(../images/footer_16.jpg); color:#fff; font-family:"微软雅黑"; background-size:100% 100%}
+.section5 #footer_logo{width:4.2307% ; margin:0 auto; padding-top:1.875em; }
+.section5 #footer_logo img{width:100% }
+.section5 h1{text-align:center;  font-size:1.875em ;padding-top:0.6666em ; font-family:Arial;}
+.section5 h6{text-align:center; padding-top:0.5769em ;font-size:1.625em ;
+ font-family:"新宋体"; padding-bottom:1.923em ;}
+.section5 #footer_tubiao{width:67.2307% ; margin:0 auto; padding-bottom:6em ;}
+.section5 #footer_tubiao #phone,#qq,#email{width:33.3333% ; float:left; text-align:center}
+.section5 #footer_tubiao #phone img,#qq img,#email img{width:34.6666% ; padding-bottom:1.875em ; display: none;}
+.section5 #footer_tubiao #phone p,#qq p,#email p{width:100%; line-height:1.875em ; text-align:center}
+.section5 #last{width:61.5384% ; margin:0 auto; border-top:1px solid #333}
+.section5 #last p{width:61.5384%;  margin:0 auto; color:#949994; line-height:1.6em ; 
+text-align:center; font-size:0.75em ; font-family:Georgia, "Times New Roman", Times, serif;
+padding:30px 0.6285em  ;  }
+
+@media screen and (width:1080px){
+#profo #zuopin a div{ line-height:7em; font-size:1.72em; }	
+}
+
+
+
+@media screen and (width:720px){
+#profo #zuopin a div{ line-height:7em; font-size:1.14em; }	
+}
+
+
+
+@media screen and (max-width:480px) and (min-width:330px){
+body{font-size:10px;}
+#banner p{padding-bottom:1.3em;}
+#banner aside {width: 12.1538%; }
+#banner aside img{width:100%; min-width:54px;  padding-bottom:1em}
+
+#about #about_logo{width:20% ;}
+
+#profo h6{padding-bottom:2em;}
+#profo #zuopin a{width:45%; padding-left:3%;}
+#profo #zuopin a img{width:96%; min-width:150px;  }
+#profo #zuopin a div{width:96.6%; font-size:1.6em ; line-height:5.8em; margin-left:5%; }
+
+#htcs,#xys,#js,#arp,#flash,#ps{padding:1em 0;}
+#htcs img,#xys img,#js img,#arp img,#flash img,#ps img{width:60%; float:none; margin:0.7em 20%}
+#htcs p,#xys p,#js p,#arp p,#flash p,#ps p{width:90%; float:none; margin-left:0.8em; padding-top:0
+; font-size:1.1em; line-height:1.5em;}
+
+
+
+.section5 #footer_logo{width:8% ;}
+.section5 #footer_logo img{width:100%; max-width:55px;}
+.section5 #footer_tubiao #phone,#qq,#email{width:100%; float:none;}
+.section5 #footer_tubiao #phone img,#qq img,#email img{width:40%; max-width:60px; padding-bottom:0.4em;}
+.section5 #last p{width:100%; margin:0 auto; padding:15px 0.6285em  ; }
+}
+
+@media screen and (max-width:320px){
+body{font-size:10px;}
+#banner p{padding-bottom:0.8em}
+#banner aside {width: 15%;}
+#banner aside img{width:100%; min-width:54px;  padding-bottom:1em}
+
+#about #about_logo { width: 15.2307%;}
+#about #about_logo img{width:100% ; min-width:50px;}
+#about #content #pbiaoqian p{font-size:1.4em ;line-height:1.4em ;}
+
+#profo h6{padding-bottom:1em; }
+#profo #zuopin a{width:47%; padding-left:2.5%;}
+#profo #zuopin{width:93% ; }
+#profo #zuopin a img{ min-width:110px; padding-bottom:0.8em; }
+#profo #zuopin a div{font-size:1em ; line-height:8.3em; margin-left:4%; }
+
+#htcs img,#xys img,#js img,#arp img,#flash img,#ps img{width:50%; float:none; margin:0.7em 25%}
+#htcs p,#xys p,#js p,#arp p,#flash p,#ps p{width:90%; float:none; margin-left:0.4em; padding-top:0}
+
+
+
+.section5 #footer_tubiao #phone,#qq,#email{width:100%; float:none;}
+.section5 #footer_logo{width:8% ;}
+.section5 #footer_logo img{width:100%; max-width:55px; padding-top:0.2em;}
+.section5 h6{padding-bottom:0.4em;}
+.section5 #footer_tubiao{padding:0.8em 0;}
+.section5 #footer_tubiao #phone,#qq,#email{padding-bottom:0.4em;}
+.section5 #footer_tubiao #phone img,#qq img,#email img{width:34.6666%; max-width:40px; padding-bottom:0.2em;}
+.section5 #last p{width:100%; margin:0 auto; padding:15px 0.6285em ; }
+}

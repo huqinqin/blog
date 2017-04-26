@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="css/gerenzhan.css" rel="stylesheet" />
+<link type="text/css" href="css/jquery.fullPage.css"  rel="stylesheet" />
+<title>AZY</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
+</head>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$.fn.fullpage({
+		slidesColor: ['','#CCC', '#e6eae6', '#ccc',''],
+		anchors: ['page1','page2', 'page3', 'page4','page5'],
+		navigation: true,
+		afterLoad: function(anchorLink, index){
+			if(index == 2){
+				$('.section2').find('p').delay(200).animate({
+					bottom: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 4){
+				$('.section4').find('.left').delay(500).animate({
+					left: '0'
+				}, 1500, 'easeOutExpo');
+				$('.section4').find('.right').delay(500).animate({
+					right: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 5){
+				$('.section5 #footer_tubiao').find('img').fadeIn(2000);
+			}
+		},
+		onLeave: function(index, direction){
+		if(index == '2'){
+				$('.section2').find('p').delay(300).animate({
+					bottom: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+		if(index == '4'){
+				$('.section4').find('.left').delay(500).animate({
+				left: '-120%'
+				}, 1500, 'easeOutExpo');
+				$('.section4').find('.right').delay(500).animate({
+					right: '-120%'
+				}, 1500, 'easeOutExpo');
+			}	
+		if(index == '5'){
+				$('.section5 #footer_tubiao').find('img').fadeOut(2000);
+			}	
+		}
+	});
+	
+
+	$("#profo #zuopin a").each(function(){
+	$(this).hover(function(){
+		$(this).find("div").stop().fadeIn();
+		},function(){
+	    $(this).find("div").stop().fadeOut();})
+		})
+	
+	
+});
+</script>
+
+
+
+
+<body>
+<section id="wraper">
+
+
+
+<div class="section section1" id="banner">
+        <h1>DESIGN & CODING</h1>
+        <p>web design, user interface, responsive design, branding & identity</p>
+        <aside><a href="#page2"><img src="images/banner_jt_04.png"></a></aside>
+</div>
+
+
+
+
+
+<div class="section section2" id="about">
+	<section id="about_logo"><img src="images/1logo.png"></section>
+	<h1>ABOUT ME</h1>
+    <h6>关于我</h6>
+    <section id="clear"></section>
+    <section id="content">
+    <aside id="zyh">“</aside>
+    <section id="pbiaoqian">
+    <p>自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍！
+    </p>
+    </section>
+    <aside id="yyh">”</aside> 
+    </section>
+</div>   
+
+
+
+
+<div class="section section3" id="profo">  
+        <h1>PROFOLIO</h1>
+        <h6>我的作品</h6>
+        <section id="zuopin">
+        <a href="javascript:;"><img src="images/jinli.jpg"></a>
+        <a href="javascript:;"><img src="images/qiu.jpg"></a>
+        <a href="javascript:;"><img src="images/shicha.jpg"></a>
+        <a href="javascript:;"><img src="images/js.jpg"></a>
+        <a href="javascript:;"><img src="images/xiangyingshi_06.jpg"></a>
+        <a href="javascript:;"><img src="images/flash.jpg"></a>
+        </section>
+        <section id="clear"></section>
+        
+</div>	
+
+
+
+<div class="section section4" id="skills">
+	<h1>SKILLS</h1>
+    <h6>我的技能</h6>
+    <section id="cont">
+        <section id="htcs" class="left"> 
+        <img src="images/HTML+CSS3.png">
+        <p>我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能。</p>
+        </section>
+        <section id="xys"> 
+        <img src="images/xiangyingshi.png">
+        <p>我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能。</p>
+        </section>
+        <section id="js" class="right"> 
+        <img src="images/JS.png">
+        <p>我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能。</p>
+        </section>
+        <section id="arp" class="left"> 
+        <img src="images/ARP.png">
+        <p>我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能。</p>
+        </section>
+        <section id="flash"> 
+        <img src="images/FLASH.png">
+        <p>我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能。</p>
+        </section>
+        <section id="ps" class="right"> 
+        <img src="images/PS.png">
+        <p>我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能我的技能。</p>
+      </section>
+        <section id="clear"></section>
+    </section>
+</div>  
+
+
+
+<div class="section section5">
+	<section id="footer_logo"><img src="images/4logo.png"></section>
+	<h1>CONTACT</h1>
+    <h6>联系我</h6>
+    <section id="footer_tubiao">
+        <section id="phone">
+        <img src="images/footertu_17.png">
+        <p>TEL<br>123-4567-8910</p>
+        </section>
+        <section id="qq">
+        <img src="images/footertu_19.png">
+        <p>QQ<br>123456789</p>
+        </section>
+        <section id="email">
+        <img src="images/footertu_21.png">
+        <p>E-mail<br>123456789@qq.com</p>
+        </section>
+        <section id="clear"></section>
+    </section>
+   	<section id="last">
+    <P>Designed and Developed by Azy. BY-NC-SA License<br>
+    Copyright @ 2014-2020 azy.com. All Rights Reserved.
+    </P>
+    </section>
+</div>
+
+</section>
+</body>
+</html>    
+    
+    
